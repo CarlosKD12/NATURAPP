@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "NaturApp",
+    "slug": "naturapp",
+    "version": "1.0.0",
+    "plugins": ["expo-router"],
+    "scheme": "naturapp"
+  }
+}

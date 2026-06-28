@@ -1,0 +1,79 @@
+# Estando en NATURAPP (raíz del proyecto)
+cat > .gitignore << 'EOF'
+# ============================================
+# NATURAPP - Archivos ignorados globalmente
+# ============================================
+
+# ─── Dependencias ────────────────────────────
+node_modules/
+package-lock.json
+yarn.lock
+
+# ─── Archivos de entorno ─────────────────────
+.env
+.env.*
+*.env
+!.env.example
+
+# ─── Archivos de sistema ─────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.swp
+*.swo
+
+# ─── Expo (frontend) ─────────────────────────
+.expo/
+dist/
+.expo-shared/
+.expo-in-app-purchases/
+
+# ─── Backend (logs y caché) ──────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── Editor y IDE ────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+*.iml
+
+# ─── Build y temp ────────────────────────────
+build/
+dist/
+tmp/
+temp/
+*.tmp
+
+# ─── Cobertura de pruebas ────────────────────
+coverage/
+.nyc_output/
+
+# ─── Archivos de error ──────────────────────
+error.log
+error.txt
+
+# ─── Dependencias del backend ────────────────
+naturapp-backend/node_modules/
+naturapp-backend/.env
+naturapp-backend/package-lock.json
+naturapp-backend/dist/
+naturapp-backend/build/
+
+# ─── Dependencias del frontend ───────────────
+naturapp-mobile/node_modules/
+naturapp-mobile/.env
+naturapp-mobile/package-lock.json
+naturapp-mobile/.expo/
+naturapp-mobile/dist/
+naturapp-mobile/build/
+
+# ─── Archivos de AI (opcional) ──────────────
+AGENTS.md
+CLAUDE.md
+*.ai
+EOF
